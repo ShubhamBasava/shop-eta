@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -8,7 +10,7 @@ const Header = () => {
           <h1 className="logo">ShopVita</h1>
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler text-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#main-nav"
@@ -16,12 +18,32 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle Navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon icon={faBars} /> {/* Add FontAwesome icon */}
         </button>
         <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-          {/* Add your navigation links here */
+          <ul className="navbar-nav ml-auto"> {/* Use ml-auto class to align items right */}
+            <li className="nav-item">
+              <a href="/" className="nav-link text-white">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/shops" className="nav-link text-white">
+                Shops
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/about" className="nav-link text-white">
+                About Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/contact" className="nav-link text-white">
+                Contact
+              </a>
+            </li>
             
-          }
+          </ul>
         </div>
       </div>
     </header>
