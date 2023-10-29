@@ -1,19 +1,29 @@
-// src/components/Header.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+    <header className="navbar">
+      <div className="container-xl">
+        <a href="/" className="navbar-brand">
+          <h1 className="logo">ShopVita</h1>
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+          {/* Add your navigation links here */}
+        </div>
+      </div>
     </header>
   );
-}
+};
 
 export default Header;
