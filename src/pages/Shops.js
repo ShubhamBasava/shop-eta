@@ -3,7 +3,7 @@ import React from "react";
 const Shops = () => {
   return (
     <div>
-      <div className="container-xxl abt-intro-bg mb-3">
+      <div className="container-xxl shop-bg mb-3">
         <div
           className="row justify-content-center align-items-center text-white"
           style={{ height: "100vh", verticalAlign: "middle" }}

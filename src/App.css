@@ -237,3 +237,15 @@ a:hover {
   background-size: cover;
   background-repeat: none;
 }
+/* Shop Page Styles */
+.shop-bg {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  ),
+  url("static/assets/shop.jpg"); /* Adjust the path to your image */
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: none;
+}
