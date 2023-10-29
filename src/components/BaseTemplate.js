@@ -1,11 +1,36 @@
 // src/components/BaseTemplate.js
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 function BaseTemplate({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Add the head content, including CSS and fonts */}
+        {/* Add the head content, including CSS and fonts */
+        <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+        <div className="container">
+          <Link to="/" className="navbar-brand , logo1">
+            ShopVita
+          </Link>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/ShopDetails" className="nav-link">
+                Shop Details
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        }
       </head>
       <body>
         {/* Navbar (Header) */}
