@@ -11,6 +11,7 @@ const AboutUs = () => {
           style={{ height: "100vh", verticalAlign: "middle" }}
         >
           <div className="col-md-6 text-center d-block">
+
             <h1 className="display-1 text-nowrap">About ShopVita</h1>
             <p className="lead fst-italic">
               Don't wait until you've reached your goal to be proud of yourself.
@@ -22,12 +23,8 @@ const AboutUs = () => {
 
       <div className="container-xxl" style={{ marginTop: "100px" }}>
         <div className="row justify-content-center mt-5">
-          <div className="col-md-6 text-center d-block">
-            <img
-              src="/static/assets/home.jpg"
-              alt=""
-              className="img-fluid rounded-3 shadow"
-            />
+          <div className="col-md-6 text-center d-block bg-image">
+            
           </div>
           <div className="col-md-4 text-center text-white">
             <h2>About ShopVita</h2>

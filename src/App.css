@@ -1,6 +1,13 @@
 section {
   padding: 60px 0;
 }
+.bg-image {
+  background-image: url("static/assets/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0;
+}
 
 .home-bg {
   overflow: hidden;
@@ -18,7 +25,7 @@ html {
 }
 
 .logo1 {
-  font-family: 'ui-serif', cursive;
+  font-family: "ui-serif", cursive;
 }
 
 .navbar {
@@ -163,10 +170,10 @@ a:hover {
 
 .bg-img {
   background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.35) 0%,
-      rgba(0, 0, 0, 0.35) 100%
-    ),
+    90deg,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
 }
 
 .divider {
@@ -204,13 +211,29 @@ a:hover {
   border-right: 1px solid rgb(48, 49, 51);
 }
 /*Login & SignUp Page Styles*/
-
-/*About Page Styles*/
+/* About Page Styles */
 .abt-intro-bg {
   background: linear-gradient(
-      120deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.95) 100%
-    ),
-  
+    120deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  ),
+  url("static/assets/About.jpg"); /* Adjust the path to your image */
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: none;
+  height: 100vh;
+}
+
+/* Contact Page Styles */
+.contact-bg {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  ),
+  url("static/assets/Contact.jpg"); /* Adjust the path to your image */
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: none;
 }

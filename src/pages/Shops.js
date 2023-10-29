@@ -11,8 +11,7 @@ const Shops = () => {
           <div className="col-md-6 text-center d-block">
             <h1 className="display-1 text-nowrap">Shops</h1>
             <p className="lead fst-italic">
-              Welcome to the Shops page. Here, you can explore various shops and
-              products.
+              Welcome to the Shops page. Here, you can explore various shops.
             </p>
           </div>
         </div>
