@@ -19,7 +19,9 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-          {/* Add your navigation links here */}
+          {/* Add your navigation links here */
+            
+          }
         </div>
       </div>
     </header>
