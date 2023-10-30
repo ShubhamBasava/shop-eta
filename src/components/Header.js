@@ -1,8 +1,13 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const [isNavOpen, setNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setNavOpen(!isNavOpen);
+  };
   return (
     <header className="navbar">
       <div className="container-xl">
@@ -10,18 +15,26 @@ const Header = () => {
           <h1 className="logo">ShopVita</h1>
         </a>
         <button
-          className="navbar-toggler text-white"
+          id="navToggle"
+          className={`navbar-toggler text-white ${isNavOpen ? 'collapse' : ''}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#main-nav"
           aria-controls="main-nav"
           aria-expanded="false"
           aria-label="Toggle Navigation"
+          onClick={toggleNav}
         >
-          <FontAwesomeIcon icon={faBars} /> {/* Add FontAwesome icon */}
+          <FontAwesomeIcon icon={faBars} />
         </button>
-        <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-          <ul className="navbar-nav ml-auto"> {/* Use ml-auto class to align items right */}
+
+        <div
+          className="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul className="navbar-nav ml-auto">
+            {" "}
+            {/* Use ml-auto class to align items right */}
             <li className="nav-item">
               <a href="/" className="nav-link text-white">
                 Home
@@ -39,10 +52,9 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <a href="/contact" className="nav-link text-white">
-                Contact
+                Contact Us
               </a>
             </li>
-            
           </ul>
         </div>
       </div>
