@@ -1,45 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Shops = () => {
   const [shops, setShops] = useState([]);
+  const apiUrl = "http://localhost:8080/shops"; // Replace with your API endpoint
 
-  // Fetch shop data from your API or database
   useEffect(() => {
-    // You can make an API call here to fetch shop data and set it in the state.
-    // Example fetch call:
-    fetch('/api/shops')
+    // Fetch shop data from the API
+    fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => setShops(data))
-      .catch((error) => console.error('Error fetching shops', error));
-  }, []);
+      .catch((error) => console.error("Error fetching data:", error));
+  }, [apiUrl]);
 
   return (
     <div>
       <div className="container-xxl shop-bg mb-3">
-        <div className="row justify-content-center align-items-center text-white" style={{ height: "100vh", verticalAlign: "middle" }}>
+        <div
+          className="row justify-content-center align-items-center text-white"
+          style={{ height: "100vh", verticalAlign: "middle" }}
+        >
           <div className="col-md-6 text-center d-block">
             <h1 className="display-1 text-nowrap">Shops</h1>
-            <p className="lead fst-italic">Welcome to the Shops page. Here, you can explore various shops.</p>
+            <p className="lead fst-italic">
+              Welcome to the Shops page. Here, you can explore various shops.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="container-xxl py-5 ">
-        {shops.map((shop) => (
-          <div className="row justify-content-around m-0 text-white" key={shop.shopId}>
-            <div className="col-md-4">
+      <div className="container-xxl py-5 contact-bg">
+        <div className="row justify-content-around m-0 text-white">
+          {shops.map((shop) => (
+            <div className="col-md-4" key={shop.shopId}>
               <div className="card shadow px-4 py-5 text-dark">
                 <h2 className="fw-bold">{shop.shopName}</h2>
                 <p className="lead fs-6 fst-italic">
-                  Category: {shop.shopCategory}<br />
-                  Customers: {shop.customers}<br />
-                  Shop Status: {shop.shopStatus}<br />
+                  Category: {shop.shopCategory}
+                </p>
+                <p className="lead fs-6 fst-italic">
+                  Customers: {shop.customers}
+                </p>
+                <p className="lead fs-6 fst-italic">
+                  Shop Status: {shop.shopStatus}
+                </p>
+                <p className="lead fs-6 fst-italic">
                   Lease Status: {shop.leaseStatus}
                 </p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

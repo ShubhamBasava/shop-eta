@@ -9,6 +9,7 @@ const Home = () => {
             style={{ height: "80vh" }}
           >
             <div className="col-md-10 text-center text-md-left">
+            <h1 className="display-1 text-nowrap">Welcome To ShopVita</h1>
               <h1
                 className="display-4 lh-1 fw-bold text-uppercase m-0"
                 style={{ letterSpacing: "0px" }}
@@ -16,7 +17,7 @@ const Home = () => {
                 <p className="text-nowrap ">IT'S ALL ABOUT WHAT YOU</p>
                 <p className="text-nowrap">CAN ACHIEVE</p>
               </h1>
-              <p className="my-1 fs-6" style={{ width: "70%" }}>
+              <p className="my-1 fs-6 text-nowrap" style={{ width: "70%" }}>
                 <small>
                   Empower yourself to make the changes you need to make
                 </small>
