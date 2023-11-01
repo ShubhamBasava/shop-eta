@@ -47,12 +47,12 @@ const Shops = () => {
               <form onSubmit={handleShopIdSubmit}>
                 <div className="row">
                   <div className="col-md-12">
-                    <h2 className="fw-bold">View Shops Details</h2>
-                    <p className="lead fs-6 fst-italic">
-                      Enter The Shop ID To Get Data{" "}
+                    <h2 className="fw-bold">To View Shops Details</h2>
+                    <p className="lead fs-7 fst-italic  ">
+                      Enter The <strong>Shop ID </strong>{" "}
                     </p>
                   </div>
-                  <div className="divider div-transparent div-arrow-down mt-3 mb-5"></div>
+                  <div className="divider div-transparent mt-3 mb-5"></div>
                   <div className="col-md-12">
                     <div className="form-floating mb-3">
                       <input
@@ -64,7 +64,6 @@ const Shops = () => {
                         value={shopId}
                         onChange={(e) => setShopId(e.target.value)}
                       />
-                      
                     </div>
                   </div>
                   <div className="col-md-12">
@@ -101,8 +100,8 @@ const Shops = () => {
           ))}
         </div>
       </div>
-      </div>
-        );
+    </div>
+  );
 };
 
-        export default Shops;
+export default Shops;
