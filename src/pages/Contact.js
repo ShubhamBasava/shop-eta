@@ -32,6 +32,7 @@ const ContactUs = () => {
                       <div className="divider div-transparent div-arrow-down mt-3 mb-5"></div>
                       <div className="col-md-12">
                         <div className="form-floating mb-3">
+                        <label htmlFor="floatingInput">Full Name</label>
                           <input
                             type="text"
                             className="form-control"
@@ -39,11 +40,12 @@ const ContactUs = () => {
                             placeholder="name"
                             name="name"
                           />
-                          <label htmlFor="floatingInput">Full Name</label>
+                        
                         </div>
                       </div>
                       <div className="col-md-12">
                         <div className="form-floating mb-3">
+                        <label htmlFor="floatingInput">Email address</label>
                           <input
                             type="email"
                             className="form-control"
@@ -51,11 +53,11 @@ const ContactUs = () => {
                             placeholder="name@example.com"
                             name="email"
                           />
-                          <label htmlFor="floatingInput">Email address</label>
                         </div>
                       </div>
                       <div className="col-md-12">
                         <div className="form-floating mb-3">
+                        <label htmlFor="floatingInput">Subject</label>
                           <input
                             type="text"
                             className="form-control"
@@ -63,7 +65,6 @@ const ContactUs = () => {
                             placeholder="Subject"
                             name="subject"
                           />
-                          <label htmlFor="floatingInput">Subject</label>
                         </div>
                       </div>
                       <div className="col-md-12">
