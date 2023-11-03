@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -14,25 +12,13 @@ const Header = () => {
         <a href="/" className="navbar-brand">
           <h1 className="logo">ShopVita</h1>
         </a>
-        <button
-          id="navToggle"
-          className={`navbar-toggler text-white ${isNavOpen ? 'collapse' : ''}`}
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Toggle Navigation"
-          onClick={toggleNav}
-        >
-          <FontAwesomeIcon icon={faBars} />
-        </button>
+        
 
         <div
-          className="collapse navbar-collapse justify-content-end align-center"
+          className="nav-link navbar-nav1 justify-content-end "
           id="main-nav"
         >
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav1 ml-auto navbar-item-pos ">
             {" "}
             {/* Use ml-auto class to align items right */}
             <li className="nav-item">

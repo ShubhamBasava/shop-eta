@@ -5,7 +5,7 @@ const Home = () => {
       <section id="intro" className="text-white home-bg1">
         <div className="container-lg Home-BG">
           <div
-            className="row justify-content-center align-items-center"
+            className="row justify-content-center align-items-flex"
             style={{ height: "80vh" }}
           >
             <div className="col-md-10 text-center text-md-left">

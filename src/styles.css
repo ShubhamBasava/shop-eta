@@ -42,11 +42,6 @@ html {
 .navbar {
   background-color: rgba(0, 0, 0, 0.9);
 }
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.9);
-}
-
 .nav-link:hover {
   color: rgb(235, 17, 17);
 }
